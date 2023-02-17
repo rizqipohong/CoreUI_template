@@ -1,0 +1,19 @@
+thead th {
+    position: -webkit-sticky;
+    /* for Safari */
+    position: sticky;
+    top: 0;
+}
+
+thead tr:nth-child(2) th {
+    top: 37px;
+}
+
+.bg-list-set-filter {
+    background-color: #001f3f !important;
+}
+
+.text-grey-bold {
+    color: #777777;
+    font-weight: 700;
+}

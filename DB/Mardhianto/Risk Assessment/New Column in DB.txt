@@ -1,0 +1,13 @@
+tb_invoice_borrower_loan
+---------------------------
+payor_id (hapus jika ada)
+withdrawal_fee
+	float (10,2)
+	default 0.00
+
+
+tb_setting
+---------------------------
+max_latest_year
+	int(2)
+	default(10)

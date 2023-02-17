@@ -1,0 +1,80 @@
+.placeholder {
+    outline: 1px dashed #4183C4;
+}
+
+ol {
+    max-width: auto;
+    padding-left: 2rem;
+}
+
+ol.sortable,
+ol.sortable ol {
+    list-style-type: none;
+}
+
+.sortable li div {
+    border: 1px solid #d4d4d4;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: move;
+    border-color: #D4D4D4 #D4D4D4 #BCBCBC;
+    margin: 3px;
+    padding: 3px;
+    height: 35px;
+}
+
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.ui-sortable-handle .btn {
+    height: 27px;
+    margin-left: 2px;
+}
+
+li.mjs-nestedSortable-branch div.collapse-button {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border: none;
+    position: absolute;
+    margin-left: -1.6rem;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+li.mjs-nestedSortable-leaf div.collapse-button {
+    display: none !important;
+}
+
+.mjs-nestedSortable-leaf, .mjs-nestedSortable-branch {
+    padding-left: 2rem;
+}
+
+ol.sortable.ui-sortable > .placeholder {
+    margin-left: 2rem;
+}
+
+li.mjs-nestedSortable-branch ol .mjs-nestedSortable-branch {
+    padding-left: 0;
+}
+
+li.mjs-nestedSortable-branch div.collapse-button ~ ol .mjs-nestedSortable-leaf {
+    padding-left: 0;
+}
+
+.mjs-nestedSortable-branch ol.collapsed {
+    height: 0;
+}
+
+.mjs-nestedSortable-branch ol {
+    overflow: hidden;
+    height: fit-content;
+}
+
+ol.collapsed div.collapse-button {
+    display: none;
+}

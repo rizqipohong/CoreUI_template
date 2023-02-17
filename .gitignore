@@ -1,0 +1,6 @@
+.idea/*
+uploads/*
+* copy.php
+modules/*.scss
+moduls/*.map
+*.DS_Store
